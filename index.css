@@ -5,8 +5,7 @@ body {
 }
 
 header,
-nav,
-ul {
+nav, nav ul{
   display: flex;
 }
 
@@ -99,7 +98,7 @@ li {
   margin-top: -30px;
 }
 
-#main-section-1 button {
+#shop-now {
   background-color: #2371df;
   color: white;
   border: none;
@@ -109,6 +108,50 @@ li {
   width: 100px;
   height: 35px;
   font-weight: bold;
+}
+
+#main-section-2 {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+#container {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  position: relative;
+}
+
+#main-section-2-left-top {
+  width: 20%;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 50px;
+  position: absolute;
+  bottom: 25px;
+  left: 100px;
+  height: 100%;
+  background-color: #d2cdcb;
+  z-index: 100;
+
+}
+
+#main-section-2-left {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 25px;
+  width: 20%;
+  background-image: url(./assets/stock-photo-fashionable-girl-posing-white-sweater-tweed-jacket-one-shoulder-grey.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1000;
+}
+
+#main-section-2-right {
+  width: 50%;
+  margin-left: 70px;
+
 }
 
 footer {
