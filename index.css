@@ -2,6 +2,13 @@ body {
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+}
+
+input, button {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header,
@@ -35,6 +42,10 @@ nav ul {
 nav
 li {
   padding: 10px;
+}
+
+h1 {
+  font-size: 28px;
 }
 
 #register-btn {
@@ -110,6 +121,11 @@ li {
   font-weight: bold;
 }
 
+#shop-now:hover {
+  cursor: pointer;
+  background-color: #336fc0;
+}
+
 #main-section-2 {
   margin-top: 30px;
   padding: 20px;
@@ -154,8 +170,242 @@ li {
 
 }
 
+#gallery {
+  padding: 90px;
+  padding-top: 0;
+}
+
+#container1 {
+  margin-top: 30px;
+
+}
+
+#gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(25% - 10px);
+  
+}
+
+.gallery-item-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+#main-section-3 {
+  padding: 90px;
+  padding-top: 10px;
+  background: rgb(228,240,250);
+  background: linear-gradient(180deg, rgba(228,240,250,1) 0%, rgba(255,255,255,1) 100%);
+
+}
+
+#reviews-section {
+  text-align: center;
+}
+
+#reviews-caption {
+  color: gray;
+  font-size: 13px;
+  margin-top: -20px;
+}
+
+#review-container {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.review-item {
+  text-align: left;
+  font-size: 14px;
+  margin-right: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 12px;
+  position: relative;
+}
+
+.review-item-top-quote {
+  width: 35px;
+  height: 35px;
+  background-image: url(./assets/right-quotation-mark.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+    right: 15px;
+  top: -15px;
+}
+
+.review-item-bottom-quote {
+  width: 35px;
+  height: 35px;
+  background-image: url(./assets/quote-left.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+    left:15px;
+  bottom: -15px;
+}
+
+.checked {
+  color: orange;
+}
+
+.review-image {
+  background-image: url(./assets/stock-photo-fashionable-girl-posing-white-sweater-tweed-jacket-one-shoulder-grey.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+}
+
+.review-details {
+  width: 200px;
+  margin-left: 30px;
+}
+
+#contact-section {
+  height: 480px;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 1px 1px 5px rgb(226, 226, 226);
+  display: flex;
+  padding: 20px;
+}
+
+#contact-details {
+  background-color: #2371df;
+  padding: 40px;
+  color: white;
+  border-radius: 25px;
+
+}
+
+.contact-details-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details-item-icon {
+  width: 50px;
+  height: 50px;
+  background-color:#2371df;
+  text-align: center;
+  align-items: center;
+  line-height: 50px;
+  font-size: 20px;
+
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.contact-details-item-text {
+  margin-left: 10px;
+}
+
+.contact-details-item-caption {
+  margin-top: -15px;
+  font-size: 12px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+#contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  margin-top: 30px;
+}
+
+#contact-form input {
+  flex: 1 1 calc(50% - 40px);
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-right: 10px;
+  height: 50px;
+padding-left: 10px;
+}
+
+#contact-form input:hover, #contact-form input:focus  {
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+#submit-contact {
+  width: 200px;
+  border: none;
+  background-color: #2371df;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+#submit-contact:hover {
+  cursor: pointer;
+  background-color: #336fc0;
+}
+
 footer {
-  height: 500px;
-  text-align: end;
+  box-shadow: 0 -4px 5px rgb(226, 226, 226);
+  padding: 20px;
+}
+
+.footer-section1 {
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  
+}
+
+.footer-section1-main .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer-section1-main .sub-content {
+  color: gray;
+  font-size: 11px;
+}
+
+.footer-section1-sub {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  color: gray;
+  font-size: 12px;
+
+}
+
+.footer-section1-sub .title {
+  font-weight: 500;
+  color: black;
+  font-size: 13px;
+}
+
+.footer-section2 {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 30px;
+  color: gray;
 }
 
